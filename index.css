@@ -1,0 +1,71 @@
+body {
+    background: #03001e;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-page,
+.range-section,
+.guessing-section {
+    background: white;
+    width: 250px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.ins {
+    text-decoration: underline;
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.li-items {
+    font-size: 16px;
+}
+
+.instructions {
+    padding: 0;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.home,
+.enter-range,
+.enter-guess {
+    color: #03001e;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.startgamebtn,
+.startbtn,
+.guessbtn {
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 0px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+}
+
+.range-input-1,
+.range-input-2,
+.user-guess-input {
+    width: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+

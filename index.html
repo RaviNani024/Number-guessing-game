@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="bg-music" autoplay loop>
+        <source src="testmusic.mp3" type="audio/mpeg">
+    </audio>
+
+     <div class="overall">
+        <!-- Start page -->
+        <div id="start-page" class="start-page">
+            <p class="home">Want to guess a number ?</p>
+            <ul class="instructions">
+                <span class="ins">Instructions:</span>
+                <li class="li-items">Click Start Game to begin.</li>
+                <li class="li-items">Enter a range of numbers (example: 10 to 50).</li>
+                <li class="li-items">The system will secretly choose a random number in that range.</li>
+                <li class="li-items">You have 10 chances only to guess the correct number.</li>
+                <li class="li-items">After each guess, you'll see a hint either high or low.</li>
+                <li class="li-items">If you guess correctly, you win immediately 🎉.</li>
+                <li class="li-items">If you use all 10 guesses without finding it → Game Over ❌.</li>
+                <li class="li-items">You can restart the game anytime to try again.</li>
+            </ul>
+            <button class="startgamebtn">Start Game</button>
+        </div>
+        <!-- play game -->
+        <div id="range-section" class="range-section hidden">
+            <p class="enter-range">Enter Range(ex: 10 to 20)</p>
+            <p><input class="range-input-1" type="number"> <span class="to">To</span> <input class="range-input-2" type="number"></p>
+            <button class="startbtn">Start</button>
+        </div>
+        <!-- guessing starts -->
+         <div id="guessing-section" class="guessing-section hidden">
+           <p> <span class="enter-guess">Enter your Guess:</span>
+            <input class="user-guess-input" type="number"> </p>
+            <button class="guessbtn">Guess</button>
+            <p class="low-high-won"></p>
+            <p class="rem-guesses"></p>
+         </div>
+     </div>
+     <script src="index.js"></script>
+</body>
+</html>
